@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Monitoring Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="webstyle.css">
+</head>
+<body>
+    <div class="sidenav">
+        <hr>
+        <img src="logo.jpg" alt="Company Logo" width="160" style="display: block; margin: 0 auto;">
+        <hr>
+        <p><a href="#">Overview</a></p>
+        <p><a href="#">Onboarding</a></p>
+        <p><a href="#">Monitoring</a></p>
+        <p><a href="#">Flagging</a></p>
+        <p><a href="#">Source of Income</a></p>
+        <p><a href="#">UAR</a></p>
+    </div>
+
+    <div class="main">
+        <div class="header">
+            <h1>Monitoring</h1>
+        </div>
+        <div class="navigation">
+            <button id="pendingBtn" onclick="showPending()">Pending List</button>
+            <button id="completedBtn" onclick="showCompleted()">Completed List</button>
+            <button id="close"><a href="closeform.html">&#11198; Close Account</a></button>
+       
+    </div>
+    <div>
+        <input type="text" style="padding: 10px;border-radius: 10px;" placeholder="Search" class="search-input" oninput="searchUsers()">
+        <select class="dropdown" style="width: 160px;" id="triggeredReasonDropdown">
+            <option value="">Trigger Reason</option>
+            <option value="Hard flag">Hard flag</option>
+            <option value="Temp flag">Temp flag</option>
+            <option value="Restricted unflag">Restricted unflag</option>
+            <option value="Unflag">Unflag</option>
+        </select>
+        <select class="dropdown" id="riskLevelDropdown" onchange="filterByRiskLevel()">
+            <option value="">Risk Level</option>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+        </select>
+    </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Triggered Reason</th>
+                    <th>Risk Level</th>
+                    <th>In Queue for</th>
+                    <th>Date Added</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+    
+    <script src="webjs.js"></script>
+</body>
+</html>

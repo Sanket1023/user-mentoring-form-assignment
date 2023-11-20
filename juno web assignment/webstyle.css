@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.sidenav {
+    width: 250px;
+    height: 100vh;
+    /* background-color: #f1f1f1; */
+    padding-top: 20px;
+    margin: 10px;
+}
+.sidenav p{
+    padding: 10px;
+    font-size: 15px;
+}
+.sidenav a{
+    text-decoration: none;
+    font-size: 15px;
+    /* padding: 10px; */
+    color: gray;
+}
+.sidenav p:hover, .sidenav a:hover{
+    background-color: rgb(201, 201, 229);
+    color:rgb(57, 57, 186);
+    font-weight: 700;
+}
+.main {
+    flex: 1;
+    padding: 20px;
+}
+.header {
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+#pendingBtn{
+    background-color: #f8dcdc;
+    border-radius: 10px;
+}
+#completedBtn{
+    background-color: rgb(197, 255, 184);
+    border-radius: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    /* border-top-left-radius: 15px; */
+
+}
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 10px;
+    /* border-radius: 15px; */
+
+}
+th {
+    background-color: #f2f2f2;
+    /* border-top-left-radius: 15px; */
+    border-top-right-radius: 15px;
+
+}
+.high-risk {
+    color: #940000;
+}
+.medium-risk {
+    color: #a0a000;
+}
+.low-risk {
+    color: #015a01;
+}
+.navigation {
+    margin-bottom: 20px;
+
+}
+button{
+    padding: 10px;
+    border: none;
+    background-color: white;
+    font-size: 15px;
+}
+button#close{
+    background-color: rgb(220, 89, 89);
+    margin-left: 800px;
+    border-radius: 8px;
+    
+}
+#close a{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+}
+.search-btn {
+    padding: 8px;
+    cursor: pointer;
+}
+.dropdown {
+    border-radius: 10px;
+    font-weight: 700;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(236, 236, 236);
+}
+table thead tr th{
+    border-top-left-radius: 15px;
+    border: none;
+}
+table tr td span{
+    color: blue;
+    padding-left: 10px;
+}
